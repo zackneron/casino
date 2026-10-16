@@ -1,4 +1,4 @@
-const DATA_URL = "bonuses.json";
+const DATA_URL = "docs/bonuses.json";
 
 // Textual cue as well as colour, so the badge is not colour-only.
 function wageringClass(multiplier) {
@@ -101,7 +101,7 @@ async function main() {
   } catch (err) {
     showError(
       `Could not load ${DATA_URL}: ${err.message}. ` +
-        "If you opened this file directly, serve the folder instead (npx serve docs).",
+        "If you opened this file directly, serve the project folder instead (npx serve .).",
     );
   }
 }

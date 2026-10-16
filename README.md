@@ -86,12 +86,13 @@ Any OpenAI-compatible Chat Completions endpoint works:
 
 ## Viewing and styling the page
 
-The page is static: [docs/index.html](docs/index.html) loads
-[docs/assets/main.css](docs/assets/main.css) and [docs/assets/app.js](docs/assets/app.js),
-and `app.js` fetches `bonuses.json`, so serve the folder rather than opening it from disk:
+The root [index.html](index.html) loads [docs/assets/main.css](docs/assets/main.css) and
+[docs/assets/app.js](docs/assets/app.js), and `app.js` fetches
+[docs/bonuses.json](docs/bonuses.json). Serve the project folder rather than opening the
+file from disk:
 
 ```bash
-npx serve docs
+npx serve .
 ```
 
 Styling is Bootstrap 5 plus a small amount of SCSS in [src/scss](src/scss). Only the
@@ -145,7 +146,7 @@ policy.mjs         robots.txt, block / CAPTCHA / login-wall detection, safe fetc
 llm.mjs            free text -> structured fields, validation, regex fallback
 test/*.test.mjs    node:test suites
 src/scss/          SCSS source (Bootstrap overrides + page styles)
-docs/index.html    the published page
+index.html         the published page
 docs/assets/       compiled main.css and app.js
 docs/bonuses.json  scraper output
 WRITEUP.md         production notes, AI notes, time taken
