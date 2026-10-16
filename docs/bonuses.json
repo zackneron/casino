@@ -1,0 +1,55 @@
+{
+  "source": {
+    "name": "Casino.org",
+    "url": "https://www.casino.org/bonus/",
+    "scraped_at": "2026-10-12T07:49:31Z"
+  },
+  "extraction": {
+    "method": "regex-fallback",
+    "model": "none"
+  },
+  "casinos": [
+    {
+      "casino": "RetroBet",
+      "welcome_bonus": "Up to 22,500 USD + 500 free spins",
+      "wagering_requirement": 40,
+      "min_deposit": "30 USD",
+      "min_deposit_amount": 30,
+      "min_deposit_currency": "USD",
+      "source_url": "https://www.casino.org/bonus/",
+      "raw_terms": {
+        "bonus": "🥇 Up to $22,500 + 500 FS",
+        "min_deposit": "$30",
+        "wagering": "40x bonus, 40x free spins"
+      }
+    },
+    {
+      "casino": "WishKing",
+      "welcome_bonus": "250% up to 9,000 USD + 250 free spins",
+      "wagering_requirement": 40,
+      "min_deposit": "20 USD",
+      "min_deposit_amount": 20,
+      "min_deposit_currency": "USD",
+      "source_url": "https://www.casino.org/bonus/",
+      "raw_terms": {
+        "bonus": "250% up to $9,000 + 250 FS",
+        "min_deposit": "$20",
+        "wagering": "40x bonus, 40x free spins"
+      }
+    },
+    {
+      "casino": "Boho Casino",
+      "welcome_bonus": "100% up to 777 USD + 100 free spins",
+      "wagering_requirement": 40,
+      "min_deposit": "30 USD",
+      "min_deposit_amount": 30,
+      "min_deposit_currency": "USD",
+      "source_url": "https://www.casino.org/bonus/",
+      "raw_terms": {
+        "bonus": "100% up to $777 + 100 FS",
+        "min_deposit": "$30",
+        "wagering": "40x bonus, 40x free spins"
+      }
+    }
+  ]
+}

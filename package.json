@@ -1,0 +1,24 @@
+{
+  "name": "casino-bonus-scraper",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Scrapes casino welcome-bonus terms and structures them with a language model.",
+  "engines": {
+    "node": ">=22.9"
+  },
+  "scripts": {
+    "scrape": "node --env-file-if-exists=.env scrape.mjs",
+    "build:css": "sass --load-path=node_modules --quiet-deps --silence-deprecation=import,global-builtin,color-functions,mixed-decls src/scss/main.scss docs/assets/main.css --style=compressed --no-source-map",
+    "watch:css": "sass --load-path=node_modules --quiet-deps --silence-deprecation=import,global-builtin,color-functions,mixed-decls src/scss/main.scss docs/assets/main.css --watch",
+    "test": "node --test \"test/*.test.mjs\""
+  },
+  "dependencies": {
+    "cheerio": "^1.2.0",
+    "robots-parser": "^3.0.1"
+  },
+  "devDependencies": {
+    "bootstrap": "^5.3.8",
+    "sass": "1.89.2"
+  }
+}
